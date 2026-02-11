@@ -1,82 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>San Valentín 💖</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>San Valentín</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #6d0028; /* color vino */
-      color: white;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<style>
+body {
+    background-color: #6b0f1a; /* vino */
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    color: white;
+}
 
-    .container {
-      max-width: 400px;
-    }
+h1 {
+    margin-top: 50px;
+    font-size: 40px;
+}
 
-    h1 {
-      font-size: 24px;
-    }
+button {
+    background-color: white;
+    color: #6b0f1a;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-    img {
-      width: 220px;
-      margin: 20px 0;
-    }
+button:hover {
+    background-color: pink;
+}
 
-    button {
-      font-size: 18px;
-      padding: 10px 25px;
-      margin: 10px;
-      border-radius: 25px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .yes {
-      background: white;
-      color: #6d0028;
-    }
-
-    .no {
-      background: #3b0015;
-      color: white;
-    }
-  </style>
+img {
+    margin-top: 20px;
+    width: 250px;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container" id="main">
-    <h1>¿Quieres ser mi San Valentín? 💖</h1>
+<h1>¿Quieres ser mi San Valentín?</h1>
 
-    <img src="https://media.tenor.com/zJvexdmTjA4AAAAC/minion-love.gif" alt="Minion corazón">
+<img src="https://media.tenor.com/7b7v6d6o9uMAAAAC/minion-minion-loves.gif">
 
-    <br>
+<br>
 
-    <button class="yes" onclick="yesClick()">Sí</button>
-    <button class="no" onclick="noClick()">No</button>
-  </div>
+<button onclick="aceptar()">Sí</button>
+<button onclick="alert('😢')">No</button>
 
-  <script>
-    function yesClick() {
-      document.getElementById("main").innerHTML = `
-        <h1>OU LLEA 💃</h1>
-        <img src="https://media.tenor.com/2roX3uxz_68AAAAC/minions-dance.gif" alt="Minion bailando">
-      `;
-    }
+<div id="respuesta"></div>
 
-    function noClick() {
-      alert("Piénsalo otra vez 😏");
-    }
-  </script>
+<script>
+function aceptar() {
+    document.getElementById("respuesta").innerHTML = `
+        <h1>oullea</h1>
+        <img src="https://media.tenor.com/2roX3uxz_68AAAAC/minion-excited-dance.gif">
+    `;
+}
+</script>
 
 </body>
 </html>
